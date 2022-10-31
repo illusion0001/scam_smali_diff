@@ -39,7 +39,7 @@
 
     invoke-direct {p0}, Ljava/util/HashMap;-><init>()V
 
-    const p1, 0x895440
+    const p1, 0x1e84800
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

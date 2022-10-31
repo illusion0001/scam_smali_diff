@@ -68,11 +68,11 @@
 
     new-instance v1, Lcom/sec/android/app/camera/engine/MediaRecorderProfile$VideoBitrate;
 
-    const v2, 0x1ab3f00
+    const v2, 0x5f5e100
 
-    const v3, 0x2dc6c00
+    const v3, 0x42c1d80
 
-    invoke-direct {v1, v3, v2, v5, v4}, Lcom/sec/android/app/camera/engine/MediaRecorderProfile$VideoBitrate;-><init>(IIILcom/sec/android/app/camera/engine/MediaRecorderProfile$1;)V
+    invoke-direct {v1, v2, v3, v5, v4}, Lcom/sec/android/app/camera/engine/MediaRecorderProfile$VideoBitrate;-><init>(IIILcom/sec/android/app/camera/engine/MediaRecorderProfile$1;)V
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/engine/MediaRecorderProfile$2;->put(ILjava/lang/Object;)V
 
@@ -84,9 +84,9 @@
 
     new-instance v1, Lcom/sec/android/app/camera/engine/MediaRecorderProfile$VideoBitrate;
 
-    const v3, 0x44aa200
+    const v3, 0x5f5e100
 
-    const v6, 0x29020c0
+    const v6, 0x42c1d80
 
     invoke-direct {v1, v3, v6, v5, v4}, Lcom/sec/android/app/camera/engine/MediaRecorderProfile$VideoBitrate;-><init>(IIILcom/sec/android/app/camera/engine/MediaRecorderProfile$1;)V
 
@@ -100,11 +100,11 @@
 
     new-instance v1, Lcom/sec/android/app/camera/engine/MediaRecorderProfile$VideoBitrate;
 
-    const v3, 0xe4e1c0
+    const v3, 0x55d4a80
 
-    const v6, 0x17d7840
+    const v6, 0x3938700
 
-    invoke-direct {v1, v6, v3, v5, v4}, Lcom/sec/android/app/camera/engine/MediaRecorderProfile$VideoBitrate;-><init>(IIILcom/sec/android/app/camera/engine/MediaRecorderProfile$1;)V
+    invoke-direct {v1, v3, v6, v5, v4}, Lcom/sec/android/app/camera/engine/MediaRecorderProfile$VideoBitrate;-><init>(IIILcom/sec/android/app/camera/engine/MediaRecorderProfile$1;)V
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/engine/MediaRecorderProfile$2;->put(ILjava/lang/Object;)V
 
@@ -132,6 +132,10 @@
 
     new-instance v1, Lcom/sec/android/app/camera/engine/MediaRecorderProfile$VideoBitrate;
 
+    const v7, 0x16e3600
+
+    const v6, 0xc65d40
+
     invoke-direct {v1, v7, v6, v5, v4}, Lcom/sec/android/app/camera/engine/MediaRecorderProfile$VideoBitrate;-><init>(IIILcom/sec/android/app/camera/engine/MediaRecorderProfile$1;)V
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/engine/MediaRecorderProfile$2;->put(ILjava/lang/Object;)V
@@ -156,6 +160,10 @@
 
     new-instance v1, Lcom/sec/android/app/camera/engine/MediaRecorderProfile$VideoBitrate;
 
+    const v7, 0x2faf080
+
+    const v6, 0x2625a00
+
     invoke-direct {v1, v7, v6, v5, v4}, Lcom/sec/android/app/camera/engine/MediaRecorderProfile$VideoBitrate;-><init>(IIILcom/sec/android/app/camera/engine/MediaRecorderProfile$1;)V
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/engine/MediaRecorderProfile$2;->put(ILjava/lang/Object;)V
@@ -179,6 +187,10 @@
     move-result v0
 
     new-instance v1, Lcom/sec/android/app/camera/engine/MediaRecorderProfile$VideoBitrate;
+
+    const v2, 0x3938700
+
+    const v3, 0x3938700
 
     invoke-direct {v1, v2, v3, v5, v4}, Lcom/sec/android/app/camera/engine/MediaRecorderProfile$VideoBitrate;-><init>(IIILcom/sec/android/app/camera/engine/MediaRecorderProfile$1;)V
 

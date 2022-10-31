@@ -70,6 +70,20 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/sec/android/app/camera/engine/request/MakerPublicSettings;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
+    sget-object v3, Lcom/samsung/android/camera/core2/MakerPublicKey;->REQUEST_JPEG_QUALITY:Landroid/hardware/camera2/CaptureRequest$Key;
+
+    const-string v4, "100"
+
+    invoke-static {v4}, Ljava/lang/Byte;->parseByte(Ljava/lang/String;)B
+
+    move-result v4
+
+    invoke-static {v4}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
+
+    move-result-object v4
+
+    invoke-virtual {v2, v3, v4}, Lcom/sec/android/app/camera/engine/request/MakerPublicSettings;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
+
     iget-object v2, p0, Lcom/sec/android/app/camera/engine/request/TakeVideoSnapshotRequest;->mDynamicShotInfo:Lcom/samsung/android/camera/core2/container/DynamicShotInfo;
 
     invoke-interface {v1, v2}, Lcom/samsung/android/camera/core2/MakerInterface;->takePicture(Lcom/samsung/android/camera/core2/container/DynamicShotInfo;)V

@@ -181,6 +181,20 @@
 
     invoke-virtual {v1, v3, v6}, Lcom/sec/android/app/camera/engine/request/MakerPublicSettings;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
+    sget-object v3, Lcom/samsung/android/camera/core2/MakerPublicKey;->REQUEST_JPEG_QUALITY:Landroid/hardware/camera2/CaptureRequest$Key;
+
+    const-string v6, "100"
+
+    invoke-static {v6}, Ljava/lang/Byte;->parseByte(Ljava/lang/String;)B
+
+    move-result v6
+
+    invoke-static {v6}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
+
+    move-result-object v6
+
+    invoke-virtual {v1, v3, v6}, Lcom/sec/android/app/camera/engine/request/MakerPublicSettings;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
+
     const-string v1, "TakeProcessingPictureRequest"
 
     const/4 v3, 0x0

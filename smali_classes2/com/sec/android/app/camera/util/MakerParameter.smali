@@ -85,7 +85,7 @@
     :array_1
     .array-data 4
         0x0
-        0x32
+        0x28
         0x40
         0x50
         0x64

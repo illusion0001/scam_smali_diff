@@ -442,6 +442,20 @@
     invoke-virtual {p1, p0, p2}, Lcom/sec/android/app/camera/engine/request/MakerPublicSettings;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
     :cond_3
+    sget-object v0, Lcom/samsung/android/camera/core2/MakerPublicKey;->REQUEST_JPEG_QUALITY:Landroid/hardware/camera2/CaptureRequest$Key;
+
+    const-string v1, "100"
+
+    invoke-static {v1}, Ljava/lang/Byte;->parseByte(Ljava/lang/String;)B
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v0, v1}, Lcom/sec/android/app/camera/engine/request/MakerPublicSettings;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
+
     return-void
 .end method
 
@@ -663,6 +677,20 @@
     invoke-virtual {p1, p0, p2}, Lcom/sec/android/app/camera/engine/request/MakerPublicSettings;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
     :cond_5
+    sget-object v1, Lcom/samsung/android/camera/core2/MakerPublicKey;->REQUEST_JPEG_QUALITY:Landroid/hardware/camera2/CaptureRequest$Key;
+
+    const-string v2, "100"
+
+    invoke-static {v2}, Ljava/lang/Byte;->parseByte(Ljava/lang/String;)B
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
+
+    move-result-object v2
+
+    invoke-virtual {p1, v1, v2}, Lcom/sec/android/app/camera/engine/request/MakerPublicSettings;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
+
     return-void
 .end method
 

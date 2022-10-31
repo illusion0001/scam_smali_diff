@@ -3517,9 +3517,7 @@
 
     move-result v3
 
-    invoke-direct {p0, v2, v3}, Lcom/sec/android/app/camera/engine/RecordingManagerImpl;->getMaxRecordingTimeLimitBySystem(II)I
-
-    move-result v2
+    const/16 v2, 0x0
 
     iget-object v3, p0, Lcom/sec/android/app/camera/engine/RecordingManagerImpl;->mMediaRecorderProfile:Lcom/sec/android/app/camera/engine/MediaRecorderProfile;
 
@@ -3792,8 +3790,6 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/sec/android/app/camera/engine/RecordingManagerImpl;->mMaxVideoFileSize:J
-
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -3822,8 +3818,6 @@
     cmp-long v0, v0, v2
 
     if-lez v0, :cond_1
-
-    iput-wide v2, p0, Lcom/sec/android/app/camera/engine/RecordingManagerImpl;->mMaxVideoFileSize:J
 
     :cond_1
     return-void
@@ -7568,8 +7562,6 @@
     move-result v4
 
     int-to-long v4, v4
-
-    invoke-virtual {v2, v4, v5}, Landroid/media/MediaRecorder;->semSetFileSizeInterval(J)V
 
     iget-object v2, p0, Lcom/sec/android/app/camera/engine/RecordingManagerImpl;->mMediaRecorder:Landroid/media/MediaRecorder;
 
